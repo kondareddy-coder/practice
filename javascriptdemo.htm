@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myfunction(){
+document.getElementById("demo").innerHTML="paragraph changed";
+// Const 
+const name = 'Mukul';
+console.log(name); 
+// Will print 'Mukul' to the console.
+
+// Trying to reassign a const variable
+name = 'Rahul';
+console.log(name); 
+// Will give TypeError.
+
+// Trying to declare const variable first
+// and then initialise in another line
+const org_name = "GeeksforGeeks";
+console.log(org_name);
+// Throws an syntax error: missing initializer in const declaration
+
+}
+</script>
+</head>
+<body>
+<h2>Demo Javascript in Head</h2>
+<p id="demo">this is paragraph</p>
+<button type="button" onclick="myfunction()">Try it</button>
+</body>
+</html>
